@@ -7,7 +7,7 @@ Discourse.PostView.reopen({
   		$post.find('.cooked').text().split(" ").length / 180);
   	
   	$post.find('.topic-meta-data-inside').prepend(
-  			'<span class="reading-time" title="reading time">~' + reading_time +" min </span>")	
+  			'<span class="post-info reading-time" title="reading time">~' + reading_time +" min </span>")	
   }.on('postViewInserted')
 });
 })();
